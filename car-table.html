@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js fixed-layout">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze UI Admin index Examples</title>
+  <meta name="description" content="这是一个 index 页面">
+  <meta name="keywords" content="index">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body>
+
+<header class="am-topbar am-topbar-inverse admin-header">
+	<div class="am-topbar-brand">
+		<strong> 成品油二次配送管理系统 </strong> 
+	</div>
+</header>
+	
+<div class="am-cf admin-main">
+  <div class="admin-sidebar am-offcanvas">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+		<ul class="am-list admin-sidebar-list" id="admin-offcanvas">
+			<li>
+				<a class="am-cf" data-am-collapse="{parent: 'admin-offcanvas',target: '#collapse-nav-1'}"><span class="am-icon-user"></span> 成品油二次配送管理系统 
+					<span class="am-icon-angle-right"></span></a>
+			</li>
+		
+		<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-1">
+			<li class="admin-parent">
+			<li><a class="am-cf" data-am-collapse="{parent: '#collapse-nav-1',target: '#collapse-nav-2'}"> 车辆信息及调度管理 <span class="am-icon-angle-right"></span></a></li>
+			<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-2">
+				<li class="admin-parent">
+				<li><a class="am-cf" data-am-collapse="{parent: '#collapse-nav-2',target: '#collapse-nav-31'}"> 基本信息管理 <span class="am-icon-angle-right"></span></a></li>
+				<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-31">
+					<li><a href="car-add.html" class="am-cf"> 车辆信息增加 </a></li>
+					<li><a class="am-cf"> 车辆信息维护 </a></li>
+					<li><a class="am-cf"> 车辆信息查询 </a></li>
+			    </ul>
+				<li><a class="am-cf" data-am-collapse="{parent: '#collapse-nav-2',target: '#collapse-nav-32'}"> 承担业务管理 <span class="am-icon-angle-right"></span></a></li>
+				<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-32">
+					<li><a class="am-cf"> 等级类型管理 </a></li>
+					<li><a class="am-cf"> 承担业务类型 </a></li>
+					<li><a class="am-cf"> 车辆联系人 </a></li>
+			    </ul>
+				<li><a class="am-cf" data-am-collapse="{parent: '#collapse-nav-2',target: '#collapse-nav-33'}"> 联系人管理 <span class="am-icon-angle-right"></span></a></li>
+				<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-33">
+					<li><a class="am-cf"> 联系人增加 </a></li>
+					<li><a class="am-cf"> 联系人维护 </a></li>
+					<li><a class="am-cf"> 联系人查询 </a></li>
+					<li><a class="am-cf"> 生日提醒 </a></li>
+			    </ul>
+				<li><a class="am-cf" data-am-collapse="{parent: '#collapse-nav-2',target: '#collapse-nav-34'}"> 调度管理 <span class="am-icon-angle-right"></span></a></li>
+				<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-34">
+					<li><a class="am-cf"> 配送计划 </a></li>
+					<li><a class="am-cf"> 车辆调度 </a></li>
+					<li><a class="am-cf"> 车队复核 </a></li>
+			    </ul>
+				</li>
+			</ul>	
+			</li>
+	     </ul>
+	     
+	     </ul>
+    </div>
+  </div>
+
+	
+	
+	
+	<div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"> 车辆信息表 </strong> / <small class="am-text-primary am-text-lg"> Log </small></div>
+      </div>
+
+      <hr>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-6">
+          <div class="am-btn-toolbar">
+            <div class="am-btn-group am-btn-group-xs">
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 新增 </button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 保存 </button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-archive"></span> 审核 </button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除 </button>
+            </div>
+          </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-3">
+          <div class="am-form-group">
+            <select data-am-selected="{btnSize: 'sm'}">
+              <option value="option1">所有类别</option>
+              <option value="option2">0001</option>
+              <option value="option3">0002</option>
+              <option value="option3">0003</option>
+              <option value="option3">0004</option>
+              <option value="option3">0005</option>
+              <option value="option3">0006</option>
+            </select>
+          </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-3">
+          <div class="am-input-group am-input-group-sm">
+            <input type="text" class="am-form-field">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button">搜索</button>
+          </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="am-g">
+        <div class="am-u-sm-12">
+          <form class="am-form">
+            <table class="am-table am-table-striped am-table-hover table-main">
+              <thead>
+              <tr>
+                <th class="table-check"><input type="checkbox"></th><th class="table-id"> 编号 </th><th class="table-user"> 驾驶员 </th><th class="table-type"> 类型 </th><th class="table-load"> 载重量 </th><th class="table-company"> 所属单位 </th><th class="table-route"> 所属路线 </th><th class="table-status"> 车辆状态 </th><th class="table-remark"> 备注信息 </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td> 1 </td>
+                <td> driver1 </td>
+                <td> 0001 </td>
+                <td> 1t </td>
+                <td> company1 </td>
+				<td> route1 </td>
+				<td> normal </td>
+                <td> ... </td>
+				<td>
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+							<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+							<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+						</div>
+					</div>
+				</td>
+              </tr>
+			  <tr>
+                <td><input type="checkbox" /></td>
+                <td> 2 </td>
+                <td> driver2 </td>
+                <td> 0002 </td>
+                <td> 1.5t </td>
+                <td> company2 </td>
+				<td> route2 </td>
+				<td> normal </td>
+                <td> ... </td>
+				<td>
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+							<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+							<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+						</div>
+					</div>
+				</td>
+              </tr>
+			  <tr>
+                <td><input type="checkbox" /></td>
+                <td> 3 </td>
+                <td> driver3 </td>
+                <td> 0003 </td>
+                <td> 2t </td>
+                <td> company3 </td>
+				<td> route3 </td>
+				<td> normal </td>
+                <td> ... </td>
+				<td>
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+							<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+							<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+						</div>
+					</div>
+				</td>
+              </tr>
+			  <tr>
+                <td><input type="checkbox" /></td>
+                <td> 4 </td>
+                <td> driver4 </td>
+                <td> 0004 </td>
+                <td> 2.5t </td>
+                <td> company4 </td>
+				<td> route4 </td>
+				<td> normal </td>
+                <td> ... </td>
+				<td>
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+							<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+							<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+						</div>
+					</div>
+				</td>
+              </tr>	
+			  <tr>
+                <td><input type="checkbox" /></td>
+                <td> 5 </td>
+                <td> driver5 </td>
+                <td> 0005 </td>
+                <td> 3t </td>
+                <td> company5 </td>
+				<td> route5 </td>
+				<td> normal </td>
+                <td> ... </td>
+				<td>
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+							<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+							<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+						</div>
+					</div>
+				</td>
+              </tr>
+			  <tr>
+                <td><input type="checkbox" /></td>
+                <td> 6 </td>
+                <td> driver6 </td>
+                <td> 0006 </td>
+                <td> 3.5t </td>
+                <td> company6 </td>
+				<td> route6 </td>
+				<td> normal </td>
+                <td> ... </td>
+				<td>
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+							<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+							<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+						</div>
+					</div>
+				</td>
+              </tr>	
+			  </tbody>
+            </table>
+            <div class="am-cf">
+              共 6 条记录
+              <div class="am-fr">
+                <ul class="am-pagination">
+                  <li class="am-disabled"><a href="#">«</a></li>
+                  <li class="am-active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">»</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+  </div>
+	
+	
+
+
+	
+</div>
+
+
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

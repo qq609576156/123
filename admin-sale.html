@@ -1,0 +1,1581 @@
+<!doctype html>
+<html class="no-js fixed-layout">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Amaze UI Admin index Examples</title>
+  <meta name="description" content="这是一个 index 页面">
+  <meta name="keywords" content="index">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body>
+
+<header class="am-topbar am-topbar-inverse admin-header">
+	<div class="am-topbar-brand">
+		<strong> 成品油二次配送管理系统 </strong> 
+	</div>
+</header>
+	
+<div class="am-cf admin-main">
+  <!-- sidebar start -->
+  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+      <ul class="am-list admin-sidebar-list">
+        <li class="admin-parent">
+        <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav'}">成品油二次配送管理系统<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+            <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-1'}">车辆信息及调度管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+            <!-- <li class="admin-parent"> -->
+              <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-1">
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-1-1'}">基本信息管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-1-1">
+                  <li><a >车辆信息管理</a></li>
+                  <li><a href="admin-car-table.html">车辆信息维护</a></li>
+                  <li><a >车辆信息查询</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-1-2'}">承担业务管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-1-2">
+                  <li><a >等级类型管理</a></li>
+                  <li><a >承担业务类型</a></li>
+                  <li><a >车辆联系人</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-1-3'}">联系人管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-1-3">
+                  <li><a >联系人增加</a></li>
+                  <li><a >联系人维护</a></li>
+                  <li><a >联系人查询</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-1-4'}">调度管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-1-4">
+                  <li><a >配送计划</a></li>
+                  <li><a >车辆调度</a></li>
+                  <li><a >车队复核</a></li>
+                </ul>
+              </ul>
+            <!-- </li> -->
+            <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-2'}">库存管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+            <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-2">
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-2-1'}">入库管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-2-1">
+                  <li><a href="godown-entry.html">入库单</a></li>
+                   <li><a href="admin-oildepot-table.html">类型管理</a></li>
+                  <li><a>入库更新</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-2-2'}">出库管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-2-2">
+                  <li><a >销售任务管理</a></li>
+                  <li><a href="admin-sale.html">销售单管理</a></li>
+                  <li><a >出库管理</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-2-3'}">油量管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-2-3">
+                  <li><a href="oil-msg.html" >油量监控</a></li>
+                  <li><a >油量查询</a></li>
+                  <li><a >油量警告</a></li>
+                  <li><a >油量统计</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-2-4'}">计划管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-2-4">
+                  <li><a >进油计划</a></li>
+                </ul>
+              </ul>
+            <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-3'}">线路及配送中心管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+            <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-3">
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-3-1'}">配送管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-3-1">
+                  <li><a href="distribution-plan.html">配送计划</a></li>
+                  <li><a href="table.html">计划审批</a></li>
+                  <li><a href="table.html">计划表</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-3-2'}">线路管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-3-2">
+                  <li><a >线路维护</a></li>
+                  <li><a >线路调控</a></li>
+                  <li><a >线路拓展</a></li>
+                  <li><a >线路分析</a></li>
+                </ul>
+              </ul>
+            <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4'}">分析决策管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+            <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-4">
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4-1'}">用油区域分析<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-4-1">
+                  <li><a >区域数据采集</a></li>
+                  <li><a >数据分析</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4-2'}">用油时间分析<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-4-2">
+                  <li><a href="datacollect.html">时间数据采集</a></li>
+                  <li><a >数据分析</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4-3'}">运营分析<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-4-3">
+                  <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4-3-1'}">绩效分析<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                  <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav-4-3-1">
+                    <li><a >员工绩效</a></li>
+                    <li><a >部门绩效</a></li> 
+                  </ul>
+                  <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4-3-2'}">因素分析<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                  <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-4-3-2">
+                    <li><a >需求类型分析</a></li>
+                    <li><a >供求分析</a></li>
+                  </ul>
+                  <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-4-3-3'}">投诉分析<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                  <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-4-3-3">
+                    <li><a >员工投诉</a></li>
+                    <li><a >部门投诉</a></li>
+                  </ul>
+                </ul>
+            </ul>
+            <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-5'}">系统管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+            <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-5">
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-5-1'}">用户管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-5-1">
+                  <li><a >用户创建</a></li>
+                  <li><a >用户配置</a></li>
+                  <li><a >类型管理</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-5-2'}">权限管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-5-2">
+                  <li><a >权限设置</a></li>
+                  <li><a >角色设置</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-5-3'}">数据管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-5-3">
+                  <li><a >数据备份</a></li>
+                  <li><a >数据恢复</a></li>
+                </ul>
+                <li><a class="am-cf" data-am-collapse="{target: '#collapse-nav-5-4'}">配置管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a></li>
+                <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav-5-4">
+                  <li><a >系统配置</a></li>
+                </ul>
+            </ul>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+	
+	
+	
+	<div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"> 销售申报表 </strong> / <small class="am-text-primary am-text-lg"> Table </small></div>
+      </div>
+
+      <hr>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-6">
+          <div class="am-btn-toolbar">
+            <div class="am-btn-group am-btn-group-xs">
+              <button type="button" class="am-btn am-btn-default" data-am-modal="{target: '#login', closeViaDimmer: 0, width: 570, height: 850}">
+				  <span class="am-icon-plus"></span> 新增 </button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 保存 </button>
+            </div>
+          </div>
+        </div>
+        <div class="am-u-sm-12 am-u-md-3">
+          <div class="am-input-group am-input-group-sm">
+            <input type="text" class="am-form-field">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button">搜索</button>
+          </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="am-g">
+        <div class="am-u-sm-12">
+          <form class="am-form">
+				<div class="am-tabs" data-am-tabs>
+					<ul class="am-tabs-nav am-nav am-nav-tabs">
+						<li class="am-active"><a href="#tab1">油品油号信息</a></li>
+						<li><a href="#tab2">客户基本信息</a></li>
+						<li><a href="#tab3">客户年需求量信息</a></li>
+					    <li><a href="#tab4">销售信息</a></li>
+						<li><a href="#tab5">审批信息</a></li>
+						<li><a href="#tab6">申请表表头信息</a></li>
+					</ul>
+					
+					<div class="am-tabs-bd">
+						<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+							<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th><th> 编号 </th><th> 油品名称 </th><th> 油号名称 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 1 </td>
+									<td> 柴油 </td>
+									<td> 0# </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change1', closeViaDimmer: 0, width: 570, height: 400}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 2 </td>
+									<td> 汽油 </td>
+									<td> 5# </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change1', closeViaDimmer: 0, width: 570, height: 400}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 3 </td>
+									<td> 汽油 </td>
+									<td> 90# </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change1', closeViaDimmer: 0, width: 570, height: 400}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 4 </td>
+									<td> 汽油 </td>
+									<td> 93# </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change1', closeViaDimmer: 0, width: 570, height: 400}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 5 </td>
+									<td> 汽油 </td>
+									<td> 97# </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change1', closeViaDimmer: 0, width: 570, height: 400}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<table>
+							<div class="am-cf">
+								共 5 条记录
+								<div class="am-fr">
+									<ul class="am-pagination">
+										<li class="am-disabled"><a href="#">«</a></li>
+										<li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+							</table>
+							</table>
+						</div>
+
+						<div class="am-tab-panel am-fade" id="tab2">
+							<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th><th> 所属分公司 </th><th> 客户代码 </th><th> 客户名称 </th><th> 客户简称 </th>
+									<th> 客户地址 </th><th> 客户性质 </th><th> 客户分类 </th><th> 销售方式 </th><th> 联系人 </th><th> 联系电话 </th><th> 客户忠诚度 </th>
+									<th> 资信情况 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 辽宁分公司 </td>
+									<td> L1 </td>
+									<td> 李坤 </td>
+									<td> LK </td>
+									<td> 辽宁 </td>
+									<td> 社会加油站 </td>
+									<td> 核心客户 </td>
+									<td> 直销 </td>
+									<td> 李坤 </td>
+									<td> 13811111111 </td>
+									<td> 高 </td>
+									<td> 高 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change2', closeViaDimmer: 0, width: 570, height: 800}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 北京分公司 </td>
+									<td> B2 </td>
+									<td> 李鑫 </td>
+									<td> LX </td>
+									<td> 北京 </td>
+									<td> 社会经营单位 </td>
+									<td> 大客户 </td>
+									<td> 直销 </td>
+									<td> 李鑫 </td>
+									<td> 13822222222 </td>
+									<td> 高 </td>
+									<td> 高 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change2', closeViaDimmer: 0, width: 570, height: 800}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 天津分公司 </td>
+									<td> T3 </td>
+									<td> 曾旗 </td>
+									<td> ZQ </td>
+									<td> 天津 </td>
+									<td> 工业 </td>
+									<td> 一般客户 </td>
+									<td> 批发 </td>
+									<td> 曾旗 </td>
+									<td> 13833333333 </td>
+									<td> 高 </td>
+									<td> 高 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change2', closeViaDimmer: 0, width: 570, height: 800}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 深圳分公司 </td>
+									<td> S4 </td>
+									<td> 杨光义 </td>
+									<td> YGY </td>
+									<td> 深圳 </td>
+									<td> 电业 </td>
+									<td> 一般客户 </td>
+									<td> 批发 </td>
+									<td> 杨光义 </td>
+									<td> 13844444444 </td>
+									<td> 高 </td>
+									<td> 高 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change2', closeViaDimmer: 0, width: 570, height: 800}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 四川分公司 </td>
+									<td> S5 </td>
+									<td> 李含成 </td>
+									<td> LHC </td>
+									<td> 四川 </td>
+									<td> 基建 </td>
+									<td> 一般客户 </td>
+									<td> 批发 </td>
+									<td> 李含成 </td>
+									<td> 13855555555 </td>
+									<td> 高 </td>
+									<td> 高 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change2', closeViaDimmer: 0, width: 570, height: 800}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<table>
+							<div class="am-cf">
+								共 5 条记录
+								<div class="am-fr">
+									<ul class="am-pagination">
+										<li class="am-disabled"><a href="#">«</a></li>
+										<li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+							</table>
+							</table>
+						</div>
+
+						<div class="am-tab-panel am-fade" id="tab3">
+							<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th><th> 编号 </th><th> 客户名称 </th><th> 油品 </th><th> 油号 </th>
+									<th> 需求量 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 1 </td>
+									<td> 李坤 </td>
+									<td> 柴油 </td>
+									<td> 0# </td>
+									<td> 5.000吨 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change3', closeViaDimmer: 0, width: 570, height: 450}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 2 </td>
+									<td> 李鑫 </td>
+									<td> 汽油 </td>
+									<td> 5# </td>
+									<td> 10.000吨 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change3', closeViaDimmer: 0, width: 570, height: 450}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 3 </td>
+									<td> 曾旗 </td>
+									<td> 汽油 </td>
+									<td> 90# </td>
+									<td> 15.000吨 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change3', closeViaDimmer: 0, width: 570, height: 450}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 4 </td>
+									<td> 杨光义 </td>
+									<td> 汽油 </td>
+									<td> 93# </td>
+									<td> 20.000吨 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change3', closeViaDimmer: 0, width: 570, height: 450}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 5 </td>
+									<td> 李含成 </td>
+									<td> 汽油 </td>
+									<td> 97# </td>
+									<td> 25.000吨 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change3', closeViaDimmer: 0, width: 570, height: 450}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<table>
+							<div class="am-cf">
+								共 5 条记录
+								<div class="am-fr">
+									<ul class="am-pagination">
+										<li class="am-disabled"><a href="#">«</a></li>
+										<li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+							</table>
+							</table>
+						</div>
+			
+						<div class="am-tab-panel am-fade" id="tab4">
+							<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th><th> 编号 </th><th> 客户名称 </th><th> 销售方式 </th><th> 客户性质 </th>
+									<th> 品号 </th><th> 申请数量 </th><th> 审批数量 </th><th> 价格 </th><th> 结算方式 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 1 </td>
+									<td> 李坤 </td>
+									<td> 直销 </td>
+									<td> 社会加油站 </td>
+									<td> 0# </td>
+									<td> 5.000吨 </td>
+									<td> 5.000吨 </td>
+									<td> 9500元/吨 </td>
+									<td> 刷卡支付 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change4', closeViaDimmer: 0, width: 570, height: 680}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 2 </td>
+									<td> 李鑫 </td>
+									<td> 直销 </td>
+									<td> 社会经营单位 </td>
+									<td> 5# </td>
+									<td> 10.000吨 </td>
+									<td> 10.000吨 </td>
+									<td> 9400元/吨 </td>
+									<td> 刷卡支付 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change4', closeViaDimmer: 0, width: 570, height: 680}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 3 </td>
+									<td> 曾旗 </td>
+									<td> 批发 </td>
+									<td> 工业 </td>
+									<td> 90# </td>
+									<td> 15.000吨 </td>
+									<td> 15.000吨 </td>
+									<td> 9300元/吨 </td>
+									<td> 刷卡支付 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change4', closeViaDimmer: 0, width: 570, height: 680}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 4 </td>
+									<td> 杨光义 </td>
+									<td> 批发 </td>
+									<td> 电业 </td>
+									<td> 93# </td>
+									<td> 20.000吨 </td>
+									<td> 20.000吨 </td>
+									<td> 9200元/吨 </td>
+									<td> 刷卡支付 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change4', closeViaDimmer: 0, width: 570, height: 680}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 5 </td>
+									<td> 李含成 </td>
+									<td> 批发 </td>
+									<td> 基建 </td>
+									<td> 97# </td>
+									<td> 25.000吨 </td>
+									<td> 25.000吨 </td>
+									<td> 9100元/吨 </td>
+									<td> 刷卡支付 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change4', closeViaDimmer: 0, width: 570, height: 680}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<table>
+							<div class="am-cf">
+								共 5 条记录
+								<div class="am-fr">
+									<ul class="am-pagination">
+										<li class="am-disabled"><a href="#">«</a></li>
+										<li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+							</table>
+							</table>
+						</div>
+
+						<div class="am-tab-panel am-fade" id="tab5">	
+							<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th><th> 编号 </th><th> 审核/审批角色 </th><th> 审核/审批人 </th>
+									<th> 审核/审批时间 </th><th> 审核/审批意见 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 1 </td>
+									<td> 销售中心负责人 </td>
+									<td> 李坤 </td>
+									<td> 2018.11.3 </td>
+									<td> 通过 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change5', closeViaDimmer: 0, width: 570, height: 300}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 2 </td>
+									<td> 分公司公管领导 </td>
+									<td> 李鑫 </td>
+									<td> 2018.11.4 </td>
+									<td> 通过 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change5', closeViaDimmer: 0, width: 570, height: 300}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 3 </td>
+									<td> 分公司领导 </td>
+									<td> 曾旗 </td>
+									<td> 2018.11.5 </td>
+									<td> 通过 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change5', closeViaDimmer: 0, width: 570, height: 300}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 4 </td>
+									<td> 营销处负责人 </td>
+									<td> 杨光义 </td>
+									<td> 2018.11.6 </td>
+									<td> 通过 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change5', closeViaDimmer: 0, width: 570, height: 300}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 5 </td>
+									<td> 总经理 </td>
+									<td> 李含成 </td>
+									<td> 2018.11.7 </td>
+									<td> 通过 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary" data-am-modal="{target: '#change5', closeViaDimmer: 0, width: 570, height: 300}"><span class="am-icon-pencil-square-o"></span> 编辑 </button>
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<table>
+							<div class="am-cf">
+								共 5 条记录
+								<div class="am-fr">
+									<ul class="am-pagination">
+										<li class="am-disabled"><a href="#">«</a></li>
+										<li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+							</table>
+							</table>
+						</div>
+						
+						<div class="am-tab-panel am-fade" id="tab6">
+							<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th><th> 编号 </th><th> 分公司 </th><th> 申请日期 </th>
+									<th> 销售日期 </th><th> 填报人 </th><th> 联系方式 </th><th> 备注 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 1 </td>
+									<td> 中国航油辽宁石油有限公司 </td>
+									<td> 2018.11.3 </td>
+									<td> 2018.12.3 </td>
+									<td> 李坤 </td>
+									<td> 13811111111 </td>
+									<td> 无备注 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 2 </td>
+									<td> 中国航油北京石油有限公司 </td>
+									<td> 2018.11.3 </td>
+									<td> 2018.12.3 </td>
+									<td> 李鑫 </td>
+									<td> 13822222222 </td>
+									<td> 无备注 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 3 </td>
+									<td> 中国航油天津石油有限公司 </td>
+									<td> 2018.11.3 </td>
+									<td> 2018.12.3 </td>
+									<td> 曾旗 </td>
+									<td> 13833333333 </td>
+									<td> 无备注 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 4 </td>
+									<td> 中国航油深圳石油有限公司 </td>
+									<td> 2018.11.3 </td>
+									<td> 2018.12.3 </td>
+									<td> 杨光义 </td>
+									<td> 13844444444 </td>
+									<td> 无备注 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+                                    <td> 5 </td>
+									<td> 中国航油四川石油有限公司 </td>
+									<td> 2018.11.3 </td>
+									<td> 2018.12.3 </td>
+									<td> 李含成 </td>
+									<td> 13855555555 </td>
+									<td> 无备注 </td>
+									<td>
+										<div class="am-btn-toolbar">
+											<div class="am-btn-group am-btn-group-xs">
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+												<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<table>
+							<div class="am-cf">
+								共 5 条记录
+								<div class="am-fr">
+									<ul class="am-pagination">
+										<li class="am-disabled"><a href="#">«</a></li>
+										<li class="am-active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+									</ul>
+								</div>
+							</div>
+							</table>
+							</table>
+						</div>	
+					</div>
+				</div>
+            <hr />
+          </form>
+        </div>
+
+      </div>
+    
+	</div>
+	</div>
+	
+  
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="login">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				销售申请表
+			</div>
+			<div class="am-modal-bd">	
+				<div class="am-tabs" data-am-tabs>
+					<ul class="am-tabs-nav am-nav am-nav-tabs">
+						<li class="am-active"><a href="#tab1">油品油号信息</a></li>
+						<li><a href="#tab2">客户基本信息</a></li>
+						<li><a href="#tab3">客户年需求量信息</a></li>
+						<li><a href="#tab4">销售信息</a></li>
+					</ul>
+					
+					<div class="am-tabs-bd">
+					<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油品名称 <i class="am-icon-bars"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">柴油</option>
+									<option value="option2">汽油</option>
+								</select>
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油号名称 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">0#</option>
+									<option value="option2">5#</option>
+									<option value="option3">90#</option>
+									<option value="option4">93#</option>
+									<option value="option5">97#</option>
+								</select>
+							</div>
+						</div>
+						<br><br><br><br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>
+						
+					<div class="am-tab-panel am-fade" id="tab2">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 所属分公司 <i class="am-icon-building"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="公司">
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户代码 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="代码">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户名称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="名称">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户简称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="简称">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户地址 <i class="am-icon-arrows"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="地址">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户性质 <i class="am-icon-user-md"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">社会加油站</option>
+									<option value="option2">社会经营单位</option>
+									<option value="option3">工业</option>
+									<option value="option4">电业</option>
+									<option value="option5">基建</option>
+									<option value="option6">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户分类 <i class="am-icon-user-md"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">核心客户</option>
+									<option value="option2">大客户</option>
+									<option value="option3">一般客户</option>
+									<option value="option4">非固定客户</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 销售方式 <i class="am-icon-building-o"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">直销</option>
+									<option value="option2">批发</option>
+									<option value="option3">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 联系人 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="联系人">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 联系电话 <i class="am-icon-phone"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="电话">
+							</div>
+						</div>
+					    <div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户忠诚度 <i class="am-icon-user-secret"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">高</option>
+									<option value="option2">一般</option>
+									<option value="option2">低</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 资信情况 <i class="am-icon-bank"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">高</option>
+									<option value="option2">一般</option>
+									<option value="option2">低</option>
+								</select>
+							</div>
+						</div>
+						<br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>	
+						
+					<div class="am-tab-panel" id="tab3">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户名称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="名称">
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油品 <i class="am-icon-bars"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">柴油</option>
+									<option value="option2">汽油</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油号 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">0#</option>
+									<option value="option2">5#</option>
+									<option value="option3">90#</option>
+									<option value="option4">93#</option>
+									<option value="option5">97#</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 需求量 <i class="am-icon-bar-chart"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="需求量">
+							</div>
+						</div>
+						<br><br><br><br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>	
+						
+					<div class="am-tab-panel" id="tab4">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户名称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="名称">
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 销售方式 <i class="am-icon-building-o"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">直销</option>
+									<option value="option2">批发</option>
+									<option value="option3">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户性质 <i class="am-icon-user-md"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">社会加油站</option>
+									<option value="option2">社会经营单位</option>
+									<option value="option3">工业</option>
+									<option value="option4">电业</option>
+									<option value="option5">基建</option>
+									<option value="option6">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 品号 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">0#</option>
+									<option value="option2">5#</option>
+									<option value="option3">90#</option>
+									<option value="option4">93#</option>
+									<option value="option5">97#</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 申请数量 <i class="am-icon-bar-chart"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="数量">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 审批数量 <i class="am-icon-bar-chart"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="数量">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 价格 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="数量">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 支付方式 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">现金支付</option>
+									<option value="option2">刷卡支付</option>
+									<option value="option3">支票支付</option>
+									<option value="option4">更多</option>
+								</select>
+							</div>
+						</div>
+						<br><br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="change1">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				油品油号信息
+			</div>
+			<div class="am-modal-bd">	
+				<div class="am-g am-margin-top">
+					<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油品名称 <i class="am-icon-bars"></i></div>
+					<div class="am-u-sm-10 am-u-md-8">
+						<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+							<option value="option1">柴油</option>
+							<option value="option2">汽油</option>
+						</select>
+					</div>
+				</div>				
+				<div class="am-g am-margin-top">
+					<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油号名称 <i class="am-icon-dollar"></i></div>
+					<div class="am-u-sm-10 am-u-md-8">
+						<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+							<option value="option1">0#</option>
+							<option value="option2">5#</option>
+							<option value="option3">90#</option>
+							<option value="option4">93#</option>
+							<option value="option5">97#</option>
+						</select>
+					</div>
+				</div>
+				<br><br><br><br><br><br><br><br>
+				<div>
+					<div class="am-u-sm-10 am-u-md-2">
+						<span class="am-modal-btn">保存</span>
+					</div>
+					<div class="am-u-sm-10 am-u-md-2">
+						<span class="am-modal-btn">取消</span>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="change2">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				客户基本信息
+			</div>
+			<div class="am-modal-bd">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 所属分公司 <i class="am-icon-building"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="公司">
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户代码 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="代码">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户名称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="名称">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户简称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="简称">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户地址 <i class="am-icon-arrows"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="地址">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户性质 <i class="am-icon-user-md"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">社会加油站</option>
+									<option value="option2">社会经营单位</option>
+									<option value="option3">工业</option>
+									<option value="option4">电业</option>
+									<option value="option5">基建</option>
+									<option value="option6">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户分类 <i class="am-icon-user-md"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">核心客户</option>
+									<option value="option2">大客户</option>
+									<option value="option3">一般客户</option>
+									<option value="option4">非固定客户</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 销售方式 <i class="am-icon-building-o"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">直销</option>
+									<option value="option2">批发</option>
+									<option value="option3">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 联系人 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="联系人">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 联系电话 <i class="am-icon-phone"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="电话">
+							</div>
+						</div>
+					    <div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户忠诚度 <i class="am-icon-user-secret"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">高</option>
+									<option value="option2">一般</option>
+									<option value="option2">低</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 资信情况 <i class="am-icon-bank"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">高</option>
+									<option value="option2">一般</option>
+									<option value="option2">低</option>
+								</select>
+							</div>
+						</div>
+						<br><br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>	
+		</div>
+	</div>
+	
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="change3">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				客户年需求信息
+			</div>
+			<div class="am-modal-bd">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户名称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="名称">
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油品 <i class="am-icon-bars"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">柴油</option>
+									<option value="option2">汽油</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 油号 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">0#</option>
+									<option value="option2">5#</option>
+									<option value="option3">90#</option>
+									<option value="option4">93#</option>
+									<option value="option5">97#</option>
+								</select>
+							</div>
+						</div>
+				        <div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 需求量 <i class="am-icon-bar-chart"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="需求量">
+							</div>
+						</div>
+						<br><br><br><br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>	
+		</div>
+	</div>
+						
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="change4">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				销售信息
+			</div>
+			<div class="am-modal-bd">
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户名称 <i class="am-icon-user"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="text" class="am-form-field am-input-sm" placeholder="名称">
+							</div>
+						</div>				
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 销售方式 <i class="am-icon-building-o"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">直销</option>
+									<option value="option2">批发</option>
+									<option value="option3">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 客户性质 <i class="am-icon-user-md"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">社会加油站</option>
+									<option value="option2">社会经营单位</option>
+									<option value="option3">工业</option>
+									<option value="option4">电业</option>
+									<option value="option5">基建</option>
+									<option value="option6">更多</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 品号 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">0#</option>
+									<option value="option2">5#</option>
+									<option value="option3">90#</option>
+									<option value="option4">93#</option>
+									<option value="option5">97#</option>
+								</select>
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 申请数量 <i class="am-icon-bar-chart"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="数量">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 审批数量 <i class="am-icon-bar-chart"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="数量">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 价格 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<input type="number" class="am-form-field am-input-sm" placeholder="数量">
+							</div>
+						</div>
+						<div class="am-g am-margin-top">
+							<div class="am-u-sm-10 am-u-md-4 am-text-right"> 支付方式 <i class="am-icon-dollar"></i></div>
+							<div class="am-u-sm-10 am-u-md-8">
+								<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+									<option value="option1">现金支付</option>
+									<option value="option2">刷卡支付</option>
+									<option value="option3">支票支付</option>
+									<option value="option4">更多</option>
+								</select>
+							</div>
+						</div>
+						<br><br><br><br><br><br><br>
+						<div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">保存</span>
+							</div>
+							<div class="am-u-sm-10 am-u-md-2">
+								<span class="am-modal-btn">取消</span>
+							</div>
+						</div>	
+					</div>				
+			</div>
+	</div>
+	
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="change5">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">
+				审批/审核信息
+			</div>
+			<div class="am-modal-bd">				
+				<div class="am-g am-margin-top">
+					<div class="am-u-sm-10 am-u-md-4 am-text-right"> 审批/审核意见 <i class="am-icon-dollar"></i></div>
+					<div class="am-u-sm-10 am-u-md-8">
+						<select data-am-selected="{btnWidth: '320px', btnSize: 'sm'}">
+							<option value="option1">通过</option>
+							<option value="option2">未通过</option>
+							<option value="option3">保留</option>
+						</select>
+					</div>
+				</div>
+				<br><br><br><br><br><br>
+				<div>
+					<div class="am-u-sm-10 am-u-md-2">
+						<span class="am-modal-btn">保存</span>
+					</div>
+					<div class="am-u-sm-10 am-u-md-2">
+						<span class="am-modal-btn">取消</span>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+		
+</div>
+
+
+
+<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
